@@ -1,0 +1,24 @@
+%Pauli Matrices
+X =[0,1;1,0];
+Y = [0,-1i;1i,0];
+I = [1,0;0,1];
+Z = [1,0;0,-1];
+
+% X gate in different Dimensions
+X1 = kron(kron(kron(X,I),kron(I,I)),I);
+X2 = kron(kron(kron(I,X),kron(I,I)),I);
+X3 = kron(kron(kron(I,I),kron(X,I)),I);
+X4 = kron(kron(kron(I,I),kron(I,X)),I);
+X5 = kron(kron(kron(I,I),kron(I,I)),X);
+% Y gate in different Dimensions
+Y1 = kron(kron(kron(Y,I),kron(I,I)),I);
+Y2 = kron(kron(kron(I,Y),kron(I,I)),I);
+Y3 = kron(kron(kron(I,I),kron(Y,I)),I);
+Y4 = kron(kron(kron(I,I),kron(I,Y)),I);
+Y5 = kron(kron(kron(I,I),kron(I,I)),Y);
+% Z gate in different Dimensions
+Z1 = kron(kron(kron(Z,I),kron(I,I)),I);
+Z2 = kron(kron(kron(I,Z),kron(I,I)),I);
+Z3 = kron(kron(kron(I,I),kron(Z,I)),I);
+Z4 = kron(kron(kron(I,I),kron(I,Z)),I);
+Z5 = kron(kron(kron(I,I),kron(I,I)),Z);
